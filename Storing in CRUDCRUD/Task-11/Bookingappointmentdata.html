@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Appoitnment App</title>
+</head>
+<body>
+    <h1>Booking Appointment App</h1>
+    <form onsubmit="saveToLocalStorage(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required/>
+        <label for="number">Phone No:</label>
+        <input type="number" id="number">
+        <input type="submit" id="submit" value="Submit">
+    </form>
+    <ul id="ListOfUsers"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="Bookingappointmentdata.js"></script>
+</body>
+</html>
